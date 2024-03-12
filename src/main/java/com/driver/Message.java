@@ -12,7 +12,10 @@ public class Message {
         this.content=content;
         this.timestamp=timeStamp;
     }
-
+    public Message(int id, String content){
+        this.id=id;
+        this.content=content;
+    }
     public Date getDate(){
         return this.timestamp;
     }
