@@ -7,4 +7,19 @@ public class Message {
     private String content;
     private Date timestamp;
 
+    public Message(int id, String content, Date timeStamp){
+        this.id=id;
+        this.content=content;
+        this.timestamp=timeStamp;
+    }
+
+    public Date getDate(){
+        return this.timestamp;
+    }
+    public String getContent(){
+        return this.content;
+    }
+    public int getId(){
+        return this.id;
+    }
 }
