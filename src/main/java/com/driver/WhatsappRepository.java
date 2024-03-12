@@ -146,9 +146,9 @@ public class WhatsappRepository {
                 groups.add(grp);
                 groupMessageMap.remove(grp);
             }
-            else if(list.size()==2 && flag){
-                customGroupCount--;
-            }
+//            else if(list.size()==2 && flag){
+//                customGroupCount--;
+//            }
             if(flag && list.size()>=2)
                 ans+=list.size();
             ans+=groupMessageMap.get(grp).size();
