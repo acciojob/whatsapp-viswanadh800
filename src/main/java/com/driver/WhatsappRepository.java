@@ -51,7 +51,7 @@ public class WhatsappRepository {
             return group;
         }
         else{
-            String groupName="Group "+ (groupUserMap.size()+1);
+            String groupName="Group "+ (customGroupCount+1);
             Group group=new Group(groupName,users.size());
             groupUserMap.put(group,users);
             adminMap.put(group,users.get(0));
